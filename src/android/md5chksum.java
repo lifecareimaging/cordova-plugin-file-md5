@@ -8,6 +8,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.util.Base64;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -62,13 +64,9 @@ public class md5chksum extends CordovaPlugin{
       }
       stream.close();
       byte[] md5chksum = md5.digest();
-      BigInteger tmp = new BigInteger(1, md5chksum);
-      String hex = tmp.toString(16);
-      hex = ("0000000000000000000000000000000" + hex);
-      hex = hex.substring(hex.length()-32, hex.length());
-			callbackContext.success(hex);
-      
-			return true;
+      String hex = Base64.encodeToString(md5chksum, Base64.NO_WRAP);
+      callbackContext.success(hex);
+      return true;
     }catch (FileNotFoundException e){
       callbackContext.error("File not found" + fileUri.toString());
       return false;
