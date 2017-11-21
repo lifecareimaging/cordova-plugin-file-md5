@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-fastrde-md5",
-  "version": "1.0.0",
+  "version": "0.1.4",
   "description": "Phonegap MD5 checksum plugin for Android and iOS. The plugin reads large files in chunks and build the md5sum incrementally. It can process much larger files then read the complete content in memory and process it in place.",
   "main": "index.js",
   "scripts": {
@@ -9,16 +9,18 @@
   "cordova": {
     "id": "cordova-plugin-fastrde-md5",
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/whitespectre/cordova-plugin-fastrde-md5.git"
+    "url": "git+https://github.com/Busivid/cordova-plugin-fastrde-md5.git"
   },
   "keywords": [
     "ecosystem:cordova",
-    "cordova-android"
+    "cordova-android",
+    "cordova-ios"
   ],
   "engines": {
     "cordovaDependencies":
@@ -29,9 +31,9 @@
     }
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/whitespectre/cordova-plugin-fastrde-md5/issues"
+    "url": "https://github.com/Busivid/cordova-plugin-fastrde-md5/issues"
   },
-  "homepage": "https://github.com/whitespectre/cordova-plugin-fastrde-md5#readme"
+  "homepage": "https://github.com/Busivid/cordova-plugin-fastrde-md5#readme"
 }
