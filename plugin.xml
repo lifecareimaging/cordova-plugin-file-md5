@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="de.fastr.phonegap.plugins.md5chksum" version="0.1.4">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-file-md5" version="0.3.3">
 	<name>MD5 Checksum</name>
-	<author>Busivid Team (credit to Fabian Strachanski)</author>
+	<author>Busivid team (credit for Fabian Strachanski)</author>
 	<description>MD5 Checksum for Files on Android and iOS</description>
 	<license>MIT</license>
 	<keywords>file,md5,checksum,hash</keywords>
-	<repo>https://github.com/Busivid/cordova-plugin-fastrde-md5.git</repo>
-	<issue>https://github.com/Busivid/cordova-plugin-fastrde-md5/issues</issue>
-	<dependency id="cordova-plugin-file" version=">=4.3.3" />
+	<repo>https://github.com/lifecareimaging/cordova-plugin-file-md5.git</repo>
+	<issue>https://github.com/lifecareimaging/cordova-plugin-file-md5/issues</issue>
+	<dependency id="cordova-plugin-file" version=">=4.3.0" />
 	<js-module src="www/md5chksum.js" name="md5chksum">
 		<clobbers target="md5chksum" />
 	</js-module>
 	<platform name="android">
-		<source-file src="src/android/md5chksum.java" target-dir="src/de/fastr/phonegap/plugins" />
+		<source-file src="src/android/md5chksum.java" target-dir="src/com/manuelramonlopez/cordova/plugins" />
  		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="md5chksum">
-				<param name="android-package" value="de.fastr.phonegap.plugins.md5chksum"/>
+				<param name="android-package" value="com.manuelramonlopez.cordova.plugins.md5chksum"/>
 			</feature>
 		</config-file>
 	</platform>
