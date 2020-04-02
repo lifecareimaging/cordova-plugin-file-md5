@@ -1,11 +1,11 @@
-# cordova-plugin-fastrde-md5
+# cordova-plugin-file-md5
 Cordova MD5 checksum plugin for Android and iOS.
 The plugin reads large files in chunks and builds the md5sum incrementally.
 It can handle large files.
 
 ## install
 ```
-yourAppDir$ cordova plugin add https://github.com/Busivid/cordova-plugin-fastrde-md5.git
+yourAppDir$ cordova plugin add https://github.com/lifecareimaging/cordova-plugin-file-md5.git
 ```
 
 ## usage
